@@ -61,10 +61,11 @@ body::-webkit-scrollbar {
     padding:.5rem 1rem;
     background-color: var(--primary-color);
     color: var(--primary-font-color);
-    margin:.5rem 1rem 1rem 1rem;
+    margin:1rem;
     border-radius: .5rem;
     cursor: pointer;
     text-align: center;
+
 }
 
 /*=======================HEADER-START=======================*/
