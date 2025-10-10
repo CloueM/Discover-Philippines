@@ -53,7 +53,8 @@
 }
 
 /* Icons */
-.main-nav .nav-link img {
+.main-nav .nav-link img,
+.social-links img {
     width: 1.5rem; 
     height: 1.5rem; 
     margin-bottom: .25rem; 
@@ -131,14 +132,16 @@
 }
 
 /*Popular Destinations Section*/
+/* Culture and History */
 .destinations-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: .5rem;
-    padding: 1rem 0;
+    padding: .5rem 0;
 }
 
-.destination-card {
+.destination-card,
+.culture-card {
     border:2px solid var(--borders);
     border-radius: .5rem;
     overflow: hidden;
@@ -146,27 +149,75 @@
     flex-direction: column;
 }
 
-.destination-card img {
+.destination-card img,
+.culture-card img{
     width: 100%;
-    height: 100px;
+    height: 200px;
     object-fit: cover;
 }
 
-.destination-card h3{
+.destination-card h3,
+.culture-card h3,
+.food-item h3{
     margin:0;
-    padding:5px;
+    padding:.5rem 0 0 .5rem;
     font-weight: 500;
 }
 
-.destination-card p{
+.destination-card p,
+.culture-card p,
+.food-item p{
     margin:0;
-    padding:0 5px 5px 5px;
-    font-size: .85rem;
-
+    padding:.5rem;
 }
+
+/* Culture and History */
+.culture-history-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: .5rem;
+    padding: .5rem 0;
+}
+
+/* Foods */
+.food-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5rem;
+    padding: .5rem 0;
+}
+
+.food-item {
+    border: 2px solid var(--borders);
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100px;     
+}
+
+.food-item img {
+    width: 40%;
+    height: 100%;      
+    object-fit: cover;  
+}
+
+
+.food-item-text {
+    padding: 0 1rem;
+}
+
+
 /*=======================FOOTER=======================*/
 .main-footer{
-    position:relative;
-    overflow: hidden;
-    background-size: cover;
+    padding:1rem 0;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-top: 1px solid var(--primary-font-color);
 }
+
