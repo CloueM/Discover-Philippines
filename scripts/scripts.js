@@ -1,3 +1,4 @@
+// Country-project/scripts/scripts.js
 document.addEventListener('DOMContentLoaded', function () {
     const slider = document.querySelector('.hero-slider');
     const slides = document.querySelectorAll('.hero-section');
@@ -9,5 +10,5 @@ document.addEventListener('DOMContentLoaded', function () {
         slider.style.transform = `translateX(${offset}%)`;
     }
 
-    setInterval(nextSlide, 10000); // Change slide every 5 seconds
+    setInterval(nextSlide, 10000); // Change slide every 10 seconds
 });

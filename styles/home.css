@@ -1,4 +1,4 @@
-/* styles/home.css */
+/*country-project/styles/home.css */
 @import url("base.css");
 
 /*=======================MAIN=======================*/
@@ -65,8 +65,14 @@
     overflow: hidden;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    height: 100px;     
+    
+    height: 150px;     
+}
+
+.food-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .food-item img {
