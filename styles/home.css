@@ -1,0 +1,97 @@
+/* styles/home.css */
+@import url("./base.css");
+/*=======================Header=======================*/
+
+.main-header h1{
+    display: flex;
+    margin:0;
+    padding:1rem;
+}
+
+.main-header img {
+    width: 3rem; 
+    height: 3rem; 
+}
+
+
+/*---------------------Nav bar---------------------*/
+.main-nav {
+    background-color: var(--nav-bar-color);
+    display: flex;
+    justify-content: space-around;
+    padding: .5rem 1rem;
+    position:fixed;
+    bottom:0;
+    width:100%;
+
+}
+
+.nav-link {
+    color: var(--secondary-font-color);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:.5rem;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Icons */
+.main-nav .nav-link img {
+    width: 1.5rem; 
+    height: 1.5rem; 
+    margin-bottom: .25rem; 
+}
+/* Active Link Styles */
+.nav-link.active {
+    background-color: var(--primary-color); 
+    border-radius: 10px;  
+    color: var(--primary-font-color);
+    font-weight:700;
+}
+.nav-link .icon-active {
+    display: none;
+}
+.nav-link .icon-inactive {
+    display: block;
+}
+.nav-link.active .icon-inactive {
+    display: none;
+}
+.nav-link.active .icon-active {
+    display: block;
+}
+
+/*=======================MAIN=======================*/
+
+/* Hero Section Styles */
+.hero-slider-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.hero-slider {
+    display: flex;
+    width: 400%; 
+    transition: transform 1s ease-in-out; 
+}
+
+.hero-section {
+    width: 100%; 
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+/*=======================FOOTER=======================*/
+
