@@ -12,11 +12,152 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Discover PH" />
     <link rel="manifest" href="site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/home.css">
 </head>
 <body>
-    
+
+    <header class="main-header">
+        <h1><img src="./favicon-96x96.png" alt="Website Logo"> Discover Philippines</h1>
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link active">
+                <img class="icon-inactive" src="./assets/icons/nav-bar/home-white.png" alt="Home">
+                <img class="icon-active" src="./assets/icons/nav-bar/home-blue.png" alt="Home">
+                <span>Home</span>
+            </a>
+            <a href="pages/destination.html" class="nav-link">
+                <img class="icon-inactive" src="./assets/icons/nav-bar/destination-white.png" alt="Destinations">
+                <img class="icon-active" src="./assets/icons/nav-bar/destination-blue.png" alt="Destinations">
+                <span>Destinations</span>
+            </a>
+            <a href="pages/culture.html" class="nav-link">
+                <img class="icon-inactive" src="./assets/icons/nav-bar/culture-white.png" alt="Culture">
+                <img class="icon-active" src="./assets/icons/nav-bar/culture-blue.png" alt="Culture">
+                <span>Culture</span>
+            </a>
+            <a href="pages/food.html" class="nav-link">
+                <img class="icon-inactive" src="./assets/icons/nav-bar/food-white.png" alt="Food">
+                <img class="icon-active" src="./assets/icons/nav-bar/food-blue.png" alt="Food">
+                <span>Food</span>
+            </a>
+            <a href="pages/about.html" class="about-link nav-link">
+                <img class="icon-inactive" src="./assets/icons/nav-bar/info-white.png" alt="Info">
+                <img class="icon-active" src="./assets/icons/nav-bar/info-blue.png" alt="Info">
+                <span>About</span>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="hero-slider-container">
+            <div class="hero-slider">
+                <section class="hero-section" style="background-image: url('./assets/images/foods/adobo-img.jpg');">
+                    <div class="hero-content">
+                        <p>Flavors of the Islands</p>
+                        <h2>Food & Delicacies</h2>
+                    </div>
+                </section>
+                <section class="hero-section" style="background-image: url('./assets/images/places/palawan/palawan-img-1.jpg');">
+                    <div class="hero-content">
+                        <p>Pristine Waters</p>
+                        <h2>Discover Palawan</h2>
+                    </div>
+                </section>
+                <section class="hero-section" style="background-image: url('./assets/images/cultures/festivals/sinulog-festival/sinulog-festival.jpg');">
+                    <div class="hero-content">
+                        <p>Vibrant Traditions</p>
+                        <h2>Experience the Culture</h2>
+                    </div>
+                </section>
+                <section class="hero-section" style="background-image: url('./assets/images/places/boracay/boracay-img-1.jpg');">
+                    <div class="hero-content">
+                        <p>Powdery White Sands</p>
+                        <h2>Relax in Boracay</h2>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <section class="destinations-section">
+            <h2>Popular Destinations</h2>
+            <div class="destinations-grid">
+                <a href="./pages/destination.html" class="destination-card">
+                    <h3>Palawan</h3>
+                    <p>Limestone cliffs & lagoons</p>
+                </a>
+                <a href="pages/destination.html#boracay" class="destination-card">
+                    <h3>Boracay</h3>
+                    <p>Powdery white sands</p>
+                </a>
+                <a href="pages/destination.html#bohol" class="destination-card">
+                    <h3>Bohol</h3>
+                    <p>Chocolate Hills & tarsiers</p>
+                </a>
+                <a href="pages/destination.html#siargao" class="destination-card">
+                    <h3>Siargao</h3>
+                    <p>Surfing capital</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="culture-section">
+            <h2>Culture & History</h2>
+            <a href="pages/culture.html#festivals" class="culture-card">
+                <div class="culture-card-text">
+                    <h3>Vibrant Festivals</h3>
+                    <p>From Sinulog to Ati-Atihan, streets erupt with color, dance, and devotion—each festival telling a unique regional story.</p>
+                </div>
+            </a>
+            <a href="pages/culture.html#history" class="culture-card culture-card-image" style="background-image: url('images/cultures/festivals/ati-atihan-festival/ati-atihan-festival.jpg');">
+                 <div class="culture-card-text-overlay">
+                    <h3>Colonial Echoes</h3>
+                    <p>Centuries of Spanish, American, and Asian influence shape the architecture, faith, and language across the islands.</p>
+                </div>
+            </a>
+        </section>
+
+        <section class="food-section">
+            <h2>Food & Delicacies</h2>
+            <div class="food-list">
+                <a href="pages/food.html#adobo" class="food-item">
+                    <img src="images/foods/adobo-img.jpg" alt="A bowl of Filipino Adobo">
+                    <div class="food-item-text">
+                        <h3>Adobo</h3>
+                        <p>Soy, vinegar, garlic—comfort in a pot.</p>
+                    </div>
+                </a>
+                <a href="pages/food.html#sinigang" class="food-item">
+                    <img src="images/foods/sinigang-img.jpg" alt="A bowl of Filipino Sinigang">
+                    <div class="food-item-text">
+                        <h3>Sinigang</h3>
+                        <p>Tamarind-soured broth that warms the soul.</p>
+                    </div>
+                </a>
+                <a href="pages/food.html#halo-halo" class="food-item">
+                     <img src="images/foods/sisig-img.jpg" alt="A serving of Halo-Halo"> <div class="food-item-text">
+                        <h3>Halo-Halo</h3>
+                        <p>Shaved ice, sweets, and creamy purple 'ube'.</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="social-links">
+            <a href="#"><img src="icons/nav-bar/social-icons/instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="icons/nav-bar/social-icons/github-icon.png" alt="GitHub"></a>
+            <a href="#"><img src="icons/nav-bar/social-icons/email-icon.png" alt="Email"></a>
+        </div>
+        <p>&copy; 2025 PH Discover. All rights reserved.</p>
+    </footer>
+
+
+    <script src="./scripts/scripts.js"></script>
 </body>
 </html>
