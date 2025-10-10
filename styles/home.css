@@ -95,11 +95,11 @@
 
 .hero-section {
     width: 100%; 
-    height: 300px;
+    height: 200px;
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
     color: white;
     text-align: center;
@@ -109,13 +109,15 @@
 .hero-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: start;
-background: #FFFFFF;
-background: linear-gradient(280deg, rgba(255, 255, 255, 0) 20%, rgba(25, 30, 59, 0.74) 100%);
-    height: 40%;
+    background: #FFFFFF;
+    background: linear-gradient(280deg, rgba(255, 255, 255, 0) 20%, rgba(25, 30, 59, 0.74) 100%);
+    height: 100%;
     width: 100%;
     gap:.5rem;
+    padding-bottom: 1rem;
+    text-align: left;
 
 }
 .hero-content h2, .hero-content p {
@@ -127,9 +129,44 @@ background: linear-gradient(280deg, rgba(255, 255, 255, 0) 20%, rgba(25, 30, 59,
     font-size: 2rem;
     font-weight: 700;
 }
+
+/*Popular Destinations Section*/
+.destinations-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .5rem;
+    padding: 1rem 0;
+}
+
+.destination-card {
+    border:2px solid var(--borders);
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex; 
+    flex-direction: column;
+}
+
+.destination-card img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.destination-card h3{
+    margin:0;
+    padding:5px;
+    font-weight: 500;
+}
+
+.destination-card p{
+    margin:0;
+    padding:0 5px 5px 5px;
+    font-size: .85rem;
+
+}
 /*=======================FOOTER=======================*/
 .main-footer{
     position:relative;
     overflow: hidden;
-        background-size: cover;
+    background-size: cover;
 }

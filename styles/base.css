@@ -31,24 +31,21 @@ body {
 h1{
     font-size: 1.728rem;
     font-weight: 700;
-    text-decoration: none;
 }
 h2{
-    font-size:1.44rem;
-list-style: none;
+    font-size:1.25rem;
 }
 h3{
-    font-size:1.2rem;
-    list-style: none;
-}
-span {
-    font-size: 0.75rem;
-    list-style: none;
+    font-size:1rem;
 }
 
-p{
-    font-size: 1rem;
+
+span, p{
+    font-size: 0.85rem;
+}
+a{
     text-decoration: none;
+    color:inherit;
 }
 
 section:not(.hero-section), footer{
