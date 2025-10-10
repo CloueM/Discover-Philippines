@@ -1,39 +1,42 @@
 /*country-project/styles/destination.css */
 
-.destinations-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: .5rem;
-    padding: .5rem 0;
-}
-
-.destination-card,
-.culture-card {
-    border:2px solid var(--borders);
+.destination-card{
+    border: 2px solid var(--borders);
     border-radius: .5rem;
     overflow: hidden;
-    display: flex; 
-    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 150px;   
+    width: 100%;  
 }
 
-.destination-card img,
-.culture-card img{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
 
-.destination-card h3,
-.culture-card h3,
-.food-item h3{
+.destination-card h3{
     margin:0;
     padding:.5rem 0 0 .5rem;
     font-weight: 500;
 }
 
-.destination-card p,
-.culture-card p,
-.food-item p{
+.destination-card p{
     margin:0;
     padding:.5rem;
+}
+.destinations-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5rem;
+    padding: .5rem 0;
+}
+
+.destination-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.destination-card img {
+    width: 50%;
+    height: 100%;      
+    object-fit: cover;  
 }
