@@ -1,5 +1,4 @@
-/* Font */
-
+/*country-project/styles/base.css */
 
 :root {
     /* Backgrounds & Borders */
@@ -58,4 +57,189 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+.button{
+    padding:.5rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--primary-font-color);
+    margin:1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+/*=======================HEADER-START=======================*/
+
+.main-header {
+    padding:.5rem ;
+    position:sticky;
+    top:0;
+    z-index: 100;
+    background-color: var(--background);
+    left:0;
+    right:0;
+}
+
+.main-header h1{
+    display: flex;
+    margin:0;
+    align-items: center;
+    font-size: 1.25rem;
+    color:var(--primary-font-color)
+}
+
+.main-header img {
+    width: 3.5rem; 
+    height: 3.5rem; 
+    border-radius: 50%;
+}
+
+/*---------------------Nav bar---------------------*/
+.main-nav {
+    background-color: var(--nav-bar-color);
+    display: flex;
+    justify-content: space-around;
+    padding: .5rem 1rem;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    width:100%;
+
+}
+
+.nav-link {
+    color: var(--secondary-font-color);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:.5rem;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Icons */
+.main-nav .nav-link img,
+.social-links img {
+    width: 1.5rem; 
+    height: 1.5rem; 
+    margin-bottom: .25rem; 
+}
+
+.hero-content img {
+    width: 1rem; 
+    height: 1rem; 
+}
+
+/* Active Link Styles */
+.nav-link.active {
+    background-color: var(--primary-color); 
+    border-radius: 10px;  
+    color: var(--primary-font-color);
+    font-weight:700;
+}
+.nav-link .icon-active {
+    display: none;
+}
+.nav-link .icon-inactive {
+    display: block;
+}
+.nav-link.active .icon-inactive {
+    display: none;
+}
+.nav-link.active .icon-active {
+    display: block;
+}
+/*=======================HEADER-END=======================*/
+
+/* Hero Section Styles */
+.hero-slider-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.hero-slider {
+    display: flex;
+    width: 400%; 
+    transition: transform 1s ease-in-out; 
+}
+
+.hero-section {
+    width: 100%; 
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    gap:.5rem;
+
+    position: relative; /* Required for positioning the video */
+    overflow: hidden; 
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    background: #FFFFFF;
+    background: linear-gradient(280deg, rgba(255, 255, 255, 0) 20%, rgba(25, 30, 59, 0.418) 100%);
+    height: 100%;
+    width: 100%;
+    gap:.25rem;
+    padding-bottom: 1rem;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+
+}
+.hero-content h2,
+.hero-content p,
+.hero-section a {
+    margin: 0 1rem;
+
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.hero-content a{
+    display: flex;
+    align-items: center;
+    gap:.25rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* styles/places.css */
+
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    object-fit: cover; 
+}
+
+/*=======================FOOTER-END=======================*/
+.main-footer{
+    padding:1rem 0;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-top: 1px solid var(--primary-font-color);
+}
+/*=======================FOOTER-END=======================*/
 
