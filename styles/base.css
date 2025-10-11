@@ -206,7 +206,6 @@ body::-webkit-scrollbar {
     color: white;
     text-align: center;
     gap:.5rem;
-
     position: relative;
     overflow: hidden; 
 }
@@ -278,4 +277,5 @@ body::-webkit-scrollbar {
     border-top: 1px solid var(--primary-font-color);
 }
 /*=======================FOOTER-END=======================*/
+
 
