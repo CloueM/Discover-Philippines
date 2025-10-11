@@ -166,6 +166,9 @@ body::-webkit-scrollbar {
 }
 
 @media (min-width:50em){
+    body{
+        padding-bottom: 0;
+    }
     .nav-container{
         bottom:auto;
         top:6.5rem;
