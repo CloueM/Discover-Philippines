@@ -61,11 +61,12 @@ body::-webkit-scrollbar {
     padding:.5rem 1rem;
     background-color: var(--primary-color);
     color: var(--primary-font-color);
-    margin:1rem;
+    margin:.5rem;
     border-radius: .5rem;
     cursor: pointer;
     text-align: center;
-
+    max-width:12rem;
+    
 }
 
 /*=======================HEADER-START=======================*/
@@ -78,6 +79,8 @@ body::-webkit-scrollbar {
     background-color: var(--background);
     left:0;
     right:0;
+
+
 }
 
 .main-header h1{
@@ -169,7 +172,7 @@ body::-webkit-scrollbar {
 
 .hero-section {
     width: 100%; 
-    height: 200px;
+    height: 40vw;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -179,17 +182,17 @@ body::-webkit-scrollbar {
     text-align: center;
     gap:.5rem;
 
-    position: relative; /* Required for positioning the video */
+    position: relative;
     overflow: hidden; 
 }
 
 .hero-content {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
     align-items: start;
     background: #FFFFFF;
-    background: linear-gradient(280deg, rgba(255, 255, 255, 0) 20%, rgba(25, 30, 59, 0.418) 100%);
+     background: linear-gradient(90deg,rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.32) 8%, rgba(0, 0, 0, 0.35) 21%, rgba(0, 0, 0, 0) 84%);
     height: 100%;
     width: 100%;
     gap:.25rem;
@@ -198,6 +201,12 @@ body::-webkit-scrollbar {
     position: relative;
     z-index: 1;
 
+    max-width: 1080px;
+    backdrop-filter: blur(2px);
+  mask-image: linear-gradient(
+    to right,
+    black 80%,
+    transparent  )       
 }
 .hero-content h2,
 .hero-content p,
@@ -207,10 +216,12 @@ body::-webkit-scrollbar {
 }
 
 .hero-content h2 {
-    font-size: 2rem;
+    font-size: 5vw;
     font-weight: 700;
 }
-
+.hero-content p{
+    font-size: 3vw;
+}
 .hero-content a{
     display: flex;
     align-items: center;
@@ -218,9 +229,6 @@ body::-webkit-scrollbar {
     position: relative;
     z-index: 1;
 }
-
-/* styles/places.css */
-
 
 .hero-video {
     position: absolute;
@@ -231,6 +239,10 @@ body::-webkit-scrollbar {
     object-fit: cover; 
 }
 
+.main-container {
+    max-width: 1080px;
+    margin: 0 auto; 
+}
 /*=======================FOOTER-END=======================*/
 .main-footer{
     padding:1rem 0;
