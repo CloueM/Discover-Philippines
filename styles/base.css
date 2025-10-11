@@ -40,7 +40,7 @@ h3{
 }
 
 
-span, p{
+p{
     font-size: 0.85rem;
 }
 a{
@@ -114,7 +114,8 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding:.5rem;
+    justify-content: center;
+    padding:1rem;
     font-weight: 400;
     font-style: normal;
 }
@@ -135,7 +136,7 @@ body::-webkit-scrollbar {
 /* Active Link Styles */
 .nav-link.active {
     background-color: var(--primary-color); 
-    border-radius: 10px;  
+    border-radius: 5rem;  
     color: var(--primary-font-color);
     font-weight:700;
 }
