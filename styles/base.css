@@ -346,3 +346,28 @@ body::-webkit-scrollbar {
     padding:.5rem;
 }
 
+/*-----------Filter Buttons-----------*/
+.filter-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin: 1rem 0;
+}
+
+.filter-btn {
+    padding: .5rem 1rem;
+    border-radius: 9999px;
+    background-color: transparent;
+    border: 1px solid var(--borders);
+    color: var(--primary-font-color);
+    font-family: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.filter-btn.active {
+    background-color: var(--secondary-color);
+    color: var(--secondary-font-color);
+    border-color: var(--secondary-color);
+}
