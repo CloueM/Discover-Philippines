@@ -5,8 +5,8 @@
     --borders: #dfe0e4;          
 
     /* Primary Colors */
-    --primary-color: #ffbf00;    
-    --secondary-color: #1668e3;  
+    --primary-color: #fddb32;    
+    --secondary-color: #304ca2;  
 
     /* Font Colors */
     --primary-font-color: #191e3b;  
@@ -25,14 +25,19 @@ body {
     padding-bottom: 6rem;
 }
 
+section{
+    border-bottom: .5px solid var(--primary-font-color)
 
+}
 h1{
     font-size: 1.728rem;
     font-weight: 700;
 }
 h2{
-    font-size:1.25rem;
+    font-size:2.25rem;
     margin:0;
+    padding-top:2rem;
+    padding-bottom: 1rem;
 }
 h3{
     font-size:1rem;
@@ -64,9 +69,8 @@ body::-webkit-scrollbar {
     border-radius: .5rem;
     cursor: pointer;
     text-align: center;
-    width:10rem;
-
-    
+    width: 100%;
+    max-width: 10rem;
 }
 
 /* Icons */
@@ -295,13 +299,6 @@ body::-webkit-scrollbar {
 }
 
 /* Card container styles */
-.group{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding:.5rem;
-}
-
 .vertical-card{
     border:2px solid var(--borders);
     border-radius: .5rem;
@@ -309,6 +306,7 @@ body::-webkit-scrollbar {
     display: flex; 
     flex-direction: column;
     justify-content: space-between;
+    height:auto;
 }
 
 .vertical-card img{
@@ -324,7 +322,7 @@ body::-webkit-scrollbar {
     overflow: hidden;
     display: flex;
     flex-direction: row;
-    height: 150px;     
+    height: auto;     
 }
 
 .horizontal-card img {
@@ -337,6 +335,7 @@ body::-webkit-scrollbar {
 .vertical-card h3{
     margin:0;
     padding:.5rem 0 0 .5rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
@@ -345,7 +344,20 @@ body::-webkit-scrollbar {
     margin:0;
     padding:.5rem;
 }
+/* Card's h3,description, tags and button */
+.group {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    flex-grow: 1;
+}
 
+.group .button {
+    margin-top: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
 /*-----------Filter Buttons-----------*/
 .filter-tags {
     display: flex;
@@ -370,4 +382,21 @@ body::-webkit-scrollbar {
     background-color: var(--secondary-color);
     color: var(--secondary-font-color);
     border-color: var(--secondary-color);
+}
+/*-----------Card Tags-----------*/
+.card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    padding: 0 .5rem;
+    margin-bottom: 1rem;
+}
+
+.tag {
+    background-color: #22784f;
+    color: var(--secondary-font-color);
+    padding: .25rem .75rem;
+    border-radius: 5rem;
+    font-size: .65rem;
+    font-weight: 100;
 }
