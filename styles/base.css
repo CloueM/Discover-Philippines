@@ -5,8 +5,8 @@
     --borders: #dfe0e4;          
 
     /* Primary Colors */
-    --primary-color: #ffbf00;    
-    --secondary-color: #1668e3;  
+    --primary-color: #fddb32;    
+    --secondary-color: #304ca2;  
 
     /* Font Colors */
     --primary-font-color: #191e3b;  
@@ -25,26 +25,31 @@ body {
     padding-bottom: 6rem;
 }
 
+section{
+    border-bottom: .5px solid var(--primary-font-color)
 
+}
 h1{
     font-size: 1.728rem;
     font-weight: 700;
 }
 h2{
-    font-size:1.25rem;
+    font-size:1.5rem;
     margin:0;
+
 }
 h3{
-    font-size:1rem;
+    font-size:1.25rem;
 }
 
 
 p{
-    font-size: 0.85rem;
+    font-size: .80rem;
 }
 a{
     text-decoration: none;
     color:inherit;
+    font-size: 1rem;
 }
 
 section:not(.hero-section), footer{
@@ -56,6 +61,8 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+
+
 .button{
     padding:.5rem 1rem;
     background-color: var(--primary-color);
@@ -64,19 +71,21 @@ body::-webkit-scrollbar {
     border-radius: .5rem;
     cursor: pointer;
     text-align: center;
-    max-width:12rem;
-    
+    width: 100%;
+    max-width: 10rem;
 }
 
 /* Icons */
 .main-nav .nav-link img,
-.social-links img {
+.social-links img,
+.icon{
     width: 1.5rem; 
     height: 1.5rem; 
     margin-bottom: .25rem; 
 }
 
-.hero-content img {
+.hero-content img,
+.video-hero-section img {
     width: 1rem; 
     height: 1rem; 
 }
@@ -98,7 +107,7 @@ body::-webkit-scrollbar {
     display: flex;
     margin:0;
     align-items: center;
-    font-size: 1.25rem;
+
     color:var(--primary-font-color)
 }
 
@@ -115,7 +124,6 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: space-around;
     padding: 1rem 1.5rem;
-    margin:0;
     position:fixed;
     bottom:1rem;
     left:0;
@@ -194,7 +202,7 @@ body::-webkit-scrollbar {
     transition: transform 1s ease-in-out; 
 }
 
-.hero-section {
+.hero-section{
     width: 100%; 
     height: 40vw;
     background-size: cover;
@@ -207,15 +215,14 @@ body::-webkit-scrollbar {
     gap:.5rem;
     position: relative;
     overflow: hidden; 
+    z-index: 1;
 }
 
 .hero-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: end;
     align-items: start;
-    background: #FFFFFF;
-     background: linear-gradient(90deg,rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.32) 8%, rgba(0, 0, 0, 0.35) 21%, rgba(0, 0, 0, 0) 84%);
     height: 100%;
     width: 100%;
     gap:.25rem;
@@ -224,44 +231,52 @@ body::-webkit-scrollbar {
     position: relative;
     z-index: 1;
 
-    max-width: 1080px;
-    backdrop-filter: blur(2px);
-  mask-image: linear-gradient(
-    to right,
-    black 80%,
-    transparent  )       
+background: #001f63;
+background: linear-gradient(90deg, rgba(0, 31, 99, 0.42) 0%, rgba(0, 50, 160, 0) 56%);
+
+
 }
 .hero-content h2,
 .hero-content p,
-.hero-section a {
-    margin: 0 1rem;
-
+.hero-section a{
+    margin: 0 2rem;
+}
+.hero-content h2,
+.video-hero-content h2{
+    font-size: 2rem;
 }
 
-.hero-content h2 {
-    font-size: 5vw;
-    font-weight: 700;
+/* Desktop Font sizes*/
+@media (min-width:50em){
+
+    h2{
+        font-size:2.5rem;
+        padding: 2.5rem 0 1rem 0;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+    .hero-content h2,
+    .video-hero-content h2{
+        font-size: 5rem;
+    }
+
+    .hero-content p{
+        font-size: 3rem;
+    }
+
+    .hero-content a, .video-hero-content a{
+        font-size: 2rem;
+    }
 }
-.hero-content p{
-    font-size: 3vw;
-}
-.hero-content a{
+.hero-content a, .video-hero-content a{
     display: flex;
     align-items: center;
     gap:.25rem;
     position: relative;
     z-index: 1;
 }
-
-.hero-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100%;
-    object-fit: cover; 
-}
-
 
 /*=======================MAIN-END=======================*/
 /*=======================FOOTER-END=======================*/
@@ -275,6 +290,8 @@ body::-webkit-scrollbar {
     border-top: 1px solid var(--primary-font-color);
 }
 /*=======================FOOTER-END=======================*/
+
+
 
 /* Section grid styles*/
 .two-col-grid {
@@ -292,13 +309,6 @@ body::-webkit-scrollbar {
 }
 
 /* Card container styles */
-.group{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding:.5rem;
-}
-
 .vertical-card{
     border:2px solid var(--borders);
     border-radius: .5rem;
@@ -306,9 +316,10 @@ body::-webkit-scrollbar {
     display: flex; 
     flex-direction: column;
     justify-content: space-between;
+    height:auto;
 }
 
-.vertical-card img{
+.vertical-card img, .photo-{
     width: 100%;
     height: 250px;
     object-fit: cover;
@@ -321,7 +332,7 @@ body::-webkit-scrollbar {
     overflow: hidden;
     display: flex;
     flex-direction: row;
-    height: 150px;     
+    height: auto;     
 }
 
 .horizontal-card img {
@@ -334,11 +345,67 @@ body::-webkit-scrollbar {
 .vertical-card h3{
     margin:0;
     padding:.5rem 0 0 .5rem;
-    font-weight: 500;
+
 }
 
 .horizontal-card p,
 .vertical-card p{
     margin:0;
     padding:.5rem;
+}
+/* Card's h3,description, tags and button */
+.group {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    flex-grow: 1;
+}
+
+.group .button {
+    margin-top: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+/*-----------Filter Buttons-----------*/
+.filter-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin: .75rem;
+}
+
+.filter-btn {
+    padding: .5rem 1rem;
+    border-radius: 5rem;
+    background-color: transparent;
+    border: 1px solid var(--borders);
+    color: var(--primary-font-color);
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    font-size:.75rem;
+}
+
+.filter-btn.active {
+    background-color: var(--secondary-color);
+    color: var(--secondary-font-color);
+    border-color: var(--secondary-color);
+}
+/*-----------Card Tags-----------*/
+.card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    padding: 0 .5rem;
+    margin-bottom: 1rem;
+}
+
+.tag {
+    background-color: #22784f;
+    color: var(--secondary-font-color);
+    padding: .25rem .75rem;
+    border-radius: 5rem;
+    font-size: .65rem;
+    font-weight: 100;
 }

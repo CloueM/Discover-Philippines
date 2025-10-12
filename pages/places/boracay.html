@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover the most stunning travel destinations in the Philippines. From the pristine beaches of Palawan to the vibrant cities, plan your perfect island adventure here.">
+    <meta name="description" content="This page is about the place Boracay in the Philippines.">
     <title>Boracay</title>
 
     <link rel="icon" type="image/png" href="../../favicon-96x96.png" sizes="96x96" />
@@ -17,11 +17,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../styles/normalize.css">
     <link rel="stylesheet" href="../../styles/base.css">
-    <link rel="stylesheet" href="../../styles/places.css">
+    <link rel="stylesheet" href="../../styles/info-page.css">
+
 </head>
 <body>
     <header class="main-header">
-        <h1><img src="../favicon-96x96.png" alt="Website Logo"> Discover Philippines</h1>
+        <h1><img src="../../favicon-96x96.png" alt="Website Logo"> Destinations</h1>
         <nav class="main-nav">
             <div class="nav-container">            
                 <a href="../../index.html" class="nav-link">
@@ -45,30 +46,87 @@
                     <img class="icon-active" src="../../assets/icons/nav-bar/info-blue.png" alt="Info">
                 </a>
             </div>
+            <a href="../destination.html" class="back-button">Go Back</a>
         </nav>
     </header>
     <main>
-        <div class="hero-slider-container">
-            <div class="hero-slider">
-                <section class="hero-section">
-                    <video autoplay muted loop class="hero-video">
-                        <source src="../../assets/videos/boracay//boracay-vid.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-
-                    <div class="hero-content">
-                        <a href="#"><img src="../../assets/icons/other-icons/pointy-icon-white.png" alt="Location Icon">White Beach</a>
-                        <h2>Boracay</h2>
-                    </div>
-                </section>
-            </div>
-        </div>
         
-        <section class="about-destination">
-            <h2>About Boracay</h2>
-            <p>Boracay is a tropical paradise renowned for its stunningly fine, powdery white sand beaches and crystal-clear turquoise waters. It's a world-famous destination for relaxation, water sports, and vibrant nightlife.</p>
-            <div class="button">Learn More</div>
-        </section>
+        <div class="video-hero-section">
+            <div class="video-hero-content">
+                <a href="#"><img src="../../assets/icons/other-icons/pointy-icon-white.png" alt="Location Icon">White Beach</a>
+                <h2>Boracay</h2>
+            </div>
+            <video autoplay muted loop class="background-video">
+                <source src="../../assets/videos/boracay//boracay-vid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="main-container">
+            <div class="filter-tags">
+                <button type="button" class="filter-btn active">Sunset views</button>
+                <button type="button" class="filter-btn active">Beaches</button>
+                <button type="button" class="filter-btn active">Island Hopping</button>
+                <button type="button" class="filter-btn active">Water Sports</button>
+                <button type="button" class="filter-btn active">Nightlife</button>
+                <button type="button" class="filter-btn active">Resorts</button>
+            </div>
+            <section class="about-destination">
+                <h2>About</h2>
+            </section>
+            <section class="info-section">
+                <article class="info-card">
+                    <div class="info-header">
+                        <img class="icon" src="../../assets/icons/nav-bar/info-blue.png" alt="Highlights Icon">
+                        <h3>Why visit Boracay?</h3>
+                    </div>
+                    <p>Boracay is a small island in the central Philippines. It's known for its resorts and beaches. Along the west coast, White Beach is backed by palm trees, bars and restaurants. On the east coast, strong winds make Bulabog Beach a hub for water sports. Nearby, the observation deck on Mount Luho offers panoramic views over the island. Offshore, coral reefs and shipwrecks are home to diverse marine life.</p>
+                </article>
+            </section>
+            <section class="info-section">
+                <article class="info-card">
+                    <div class="info-header">
+                        <img class="icon" src="../../assets/icons/other-icons/pointy-icon.png" alt="Highlights Icon">
+                        <h3>Highlights</h3>
+                    </div>
+                    <p>
+                        • White Beach sunsets
+                        • Island-hopping and snorkeling tours
+                        • Parasailing and banana boat rides
+                        • D’Mall shopping and food scene
+                        • Panoramic views from Mount Luhol
+                    </p>
+                </article>
+            </section>
+
+            <section class="info-section">
+                <h3 class="section-title">Photos</h3>
+                <div class="photos-grid ">
+                    <figure class="photo-item ">
+                        <img src="../../assets/images/places/boracay/boracay-img-1.jpg" alt="Boracay's white sand beach with palm trees">
+                    </figure>
+                    <figure class="photo-item">
+                        <img src="../../assets/images/places/boracay/boracay-img-2.jpg" alt="Sailboats on the water at sunset in Boracay">
+                    </figure>
+                    <figure class="photo-item">
+                        <img src="../../assets/images/places/boracay/boracay-img-3.jpg" alt="A view of the clear turquoise water in Boracay">
+                    </figure>
+                    <figure class="photo-item">
+                        <img src="../../assets/images/places/boracay/boracay-img-4.jpg" alt="A view of the clear turquoise water in Boracay">
+                    </figure>
+                </div>
+            </section>
+
+            <section class="info-section">
+                <article class="info-card">
+                    <div class="info-header">
+                        <img class="icon" src="../../assets/icons/nav-bar/info-blue.png" alt="Good to know Icon">
+                        <h3>Good to know</h3>
+                    </div>
+                    <p>The best time to visit is during the dry season (November to April). Plastic bans and strict environmental rules help protect Boracay’s beauty — always follow local guidelines and respect the island’s ecosystem.</p>
+                </article>
+            </section>
+        </div>
     </main>
     <footer class="main-footer">
         <div class="social-links">
@@ -78,6 +136,6 @@
         </div>
         <p>&copy; 2025 PH Discover. All rights reserved.</p>
     </footer>
-
+    <script src="./scripts/scripts.js"></script>
 </body>
 </html>
