@@ -1,5 +1,4 @@
 /*country-project/styles/base.css */
-
 :root {
     /* Backgrounds & Borders */
     --background: #ffffff;       
@@ -273,9 +272,73 @@ body::-webkit-scrollbar {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     border-top: 1px solid var(--primary-font-color);
 }
 /*=======================FOOTER-END=======================*/
 
+/* Section grid styles*/
+.two-col-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .5rem;
+    padding: .5rem 0;
+}
 
+.one-col-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5rem;
+    padding: .5rem 0;
+}
+
+/* Card container styles */
+.group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:.5rem;
+}
+
+.vertical-card{
+    border:2px solid var(--borders);
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.vertical-card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+.horizontal-card {
+    border: 2px solid var(--borders);
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    height: 150px;     
+}
+
+.horizontal-card img {
+    width: 40%;
+    height: 100%;      
+    object-fit: cover;  
+}
+
+.horizontal-card h3,
+.vertical-card h3{
+    margin:0;
+    padding:.5rem 0 0 .5rem;
+    font-weight: 500;
+}
+
+.horizontal-card p,
+.vertical-card p{
+    margin:0;
+    padding:.5rem;
+}
