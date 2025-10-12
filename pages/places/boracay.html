@@ -17,11 +17,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../styles/normalize.css">
     <link rel="stylesheet" href="../../styles/base.css">
-    <link rel="stylesheet" href="../../styles/places.css">
+    <link rel="stylesheet" href="../../styles/info-page.css">
+
 </head>
 <body>
     <header class="main-header">
-        <h1><img src="../favicon-96x96.png" alt="Website Logo"> Discover Philippines</h1>
+        <h1><img src="../../favicon-96x96.png" alt="Website Logo"> Discover Philippines</h1>
         <nav class="main-nav">
             <div class="nav-container">            
                 <a href="../../index.html" class="nav-link">
@@ -48,27 +49,24 @@
         </nav>
     </header>
     <main>
-        <div class="hero-slider-container">
-            <div class="hero-slider">
-                <section class="hero-section">
-                    <video autoplay muted loop class="hero-video">
-                        <source src="../../assets/videos/boracay//boracay-vid.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-
-                    <div class="hero-content">
-                        <a href="#"><img src="../../assets/icons/other-icons/pointy-icon-white.png" alt="Location Icon">White Beach</a>
-                        <h2>Boracay</h2>
-                    </div>
-                </section>
+        <div class="video-hero-section">
+            <div class="video-hero-content">
+                <a href="#"><img src="../../assets/icons/other-icons/pointy-icon-white.png" alt="Location Icon">White Beach</a>
+                <h2>Boracay</h2>
             </div>
+            <video autoplay muted loop class="background-video">
+                <source src="../../assets/videos/boracay//boracay-vid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
-        
-        <section class="about-destination">
-            <h2>About Boracay</h2>
-            <p>Boracay is a tropical paradise renowned for its stunningly fine, powdery white sand beaches and crystal-clear turquoise waters. It's a world-famous destination for relaxation, water sports, and vibrant nightlife.</p>
-            <div class="button">Learn More</div>
-        </section>
+
+        <div class="main-container">
+            <section class="about-destination">
+                <h2>About Boracay</h2>
+                <p>Boracay is a tropical paradise renowned for its stunningly fine, powdery white sand beaches and crystal-clear turquoise waters. It's a world-famous destination for relaxation, water sports, and vibrant nightlife.</p>
+                <div class="button">Learn More</div>
+            </section>
+        </div>
     </main>
     <footer class="main-footer">
         <div class="social-links">
@@ -78,6 +76,6 @@
         </div>
         <p>&copy; 2025 PH Discover. All rights reserved.</p>
     </footer>
-
+    <script src="./scripts/scripts.js"></script>
 </body>
 </html>
