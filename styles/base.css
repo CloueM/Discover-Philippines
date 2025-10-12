@@ -205,7 +205,6 @@ body::-webkit-scrollbar {
     color: white;
     text-align: center;
     gap:.5rem;
-
     position: relative;
     overflow: hidden; 
 }
@@ -277,6 +276,8 @@ body::-webkit-scrollbar {
 }
 /*=======================FOOTER-END=======================*/
 
+
+
 /* Section grid styles*/
 .two-col-grid {
     display: grid;
@@ -343,3 +344,4 @@ body::-webkit-scrollbar {
     margin:0;
     padding:.5rem;
 }
+

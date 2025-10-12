@@ -10,14 +10,11 @@
     .culture-card img{
         height: 500px;
     }
-}
-
-
-@media (min-width:50em){
     .food-grid{
         grid-template-columns: 1fr 1fr;
     }
 }
+
 
 
 
