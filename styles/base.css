@@ -611,3 +611,56 @@ section{
     font-size: .85rem;
     font-weight: 100;
 }
+
+
+/*=======================TIMELINE-STYLES=======================*/
+
+.timeline-item {
+    padding: 2.5em 2em 2em;
+    margin-left:2rem;
+    position: relative;
+    color: var(--primary-font-color);
+    border-left: 2px solid var(--borders);
+}
+
+.timeline-item::before {
+    content: attr(date-is);
+    position: absolute;
+    left: 2em;
+    top: 1em;
+    display: block;
+    font-weight: 700;
+    font-size: .85rem;
+    color: var(--secondary-color); 
+}
+
+.timeline-item::after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 1em;
+    position: absolute;
+    left: -8px;
+    border-radius: 50%;
+    border: 2px solid var(--secondary-color);
+    background: var(--background);
+}
+
+
+.timeline-item:last-child {
+    border-image: linear-gradient(
+        to bottom,
+        var(--borders) 60%,
+        transparent
+    ) 1 100%;
+}
+
+.timeline-item h4 {
+    margin: 0 0 .5rem 0;
+}
+/* Scrollable */
+.timeline-container {
+    max-height: 500px; 
+    overflow-y: auto; 
+}
